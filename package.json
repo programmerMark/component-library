@@ -1,6 +1,6 @@
 {
   "name": "@programmermark/component-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component library project",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@programmermark"
