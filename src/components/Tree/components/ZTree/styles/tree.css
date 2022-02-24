@@ -1,0 +1,216 @@
+.ztree * {
+    font-family: BlinkMacSystemFont, Helvetica Neue, Helvetica, Roboto, Arial, PingFang SC, Hiragino Sans GB, Microsoft Yahei, SimSun, sans-serif !important;
+}
+
+.ztree {
+    margin: 0;
+    padding: 5px;
+    color: #262626;
+}
+
+.ztree li {
+    line-height: 24px;
+}
+
+.ztree li a {
+    padding: 0 3px;
+    height: 24px;
+}
+.ztree li a:hover {
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.ztree li a.curSelectedNode {
+    background-color: #ffe9cc;
+    color: black;
+    height: 24px;
+}
+.ztree li span {
+    line-height: 24px;
+    color: #262626;
+}
+.ztree li span.button {
+    height: 24px;
+    background-image: url('./img/tree.png');
+}
+
+.ztree li span.button.chk {
+    width: 16px;
+    height: 24px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+/* ********checkbox图片位置********* */
+.ztree li span.button.chk.checkbox_false_full {
+    background-position: 0 3px;
+}
+.ztree li span.button.chk.checkbox_false_full_focus {
+    background-position: -24px 3px;
+}
+.ztree li span.button.chk.checkbox_false_part {
+    background-position: 0 -69px;
+}
+.ztree li span.button.chk.checkbox_false_part_focus {
+    background-position: -24px -69px;
+}
+.ztree li span.button.chk.checkbox_false_disable {
+    background-position: -48px 3px;
+}
+.ztree li span.button.chk.checkbox_true_full {
+    background-position: 0 -45px;
+}
+.ztree li span.button.chk.checkbox_true_full_focus {
+    background-position: -24px -45px;
+}
+.ztree li span.button.chk.checkbox_true_part {
+    background-position: 0 -21px;
+}
+.ztree li span.button.chk.checkbox_true_part_focus {
+    background-position: -24px -21px;
+}
+.ztree li span.button.chk.checkbox_true_disable {
+    background-position: -48px -45px;
+}
+/* ********radio图片位置********* */
+.ztree li span.button.chk.radio_false_full {
+    background-position: -72px 3px;
+}
+.ztree li span.button.chk.radio_false_full_focus {
+    background-position: -96px 3px;
+}
+.ztree li span.button.chk.radio_false_part {
+    background-position: -72px -69px;
+}
+.ztree li span.button.chk.radio_false_part_focus {
+    background-position: -96px -69px;
+}
+.ztree li span.button.chk.radio_false_disable {
+    background-position: -120px 3px;
+}
+.ztree li span.button.chk.radio_true_full {
+    background-position: -72px -45px;
+}
+.ztree li span.button.chk.radio_true_full_focus {
+    background-position: -96px -45px;
+}
+.ztree li span.button.chk.radio_true_part {
+    background-position: -72px -45px;
+}
+.ztree li span.button.chk.radio_true_part_focus {
+    background-position: -96px -45px;
+}
+.ztree li span.button.chk.radio_true_disable {
+    background-position: -120px -45px;
+}
+/* **********展开/折叠图标********* */
+.ztree li span.button.noline_open {
+    background-position: -70px -94px;
+}
+.ztree li span.button.noline_close {
+    background-position: -95px -95px;
+}
+
+/* ***********文件夹和文件************ */
+.ztree li span.button.ico_open {
+    background-position: 0px -93px;
+}
+.ztree li span.button.ico_close {
+    background-position: 2px -93px;
+}
+.ztree li span.button.ico_docu {
+    background-position: -22px -93px;
+}
+/* *********编辑、移除、新增********** */
+.ztree li span.button.edit {
+    background-position: -46px -116px;
+}
+.ztree li span.button.edit:hover {
+    background-position: -46px -116px;
+}
+.ztree li span.button.remove {
+    margin-left: 2px;
+    margin-right: -1px;
+    background-position: -22px -116px;
+    vertical-align: top;
+    *vertical-align: middle;
+}
+.ztree li span.button.remove:hover {
+    background-position: -22px -116px;
+}
+.ztree li span.button.add {
+    margin-left: 2px;
+    margin-right: -1px;
+    background-position: -189px -116px;
+    vertical-align: top;
+    *vertical-align: middle;
+}
+.ztree li span.button.add:hover {
+    background-position: -168px -116px;
+}
+
+/* ********箭头******** */
+span.tmpzTreeMove_arrow {
+    width: 16px;
+    height: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 2px 0 0 1px;
+    border: 0 none;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: -46px -95px;
+    background-image: url('./img/tree.png');
+}
+
+/* 带线的展开、收起 */
+.ztree li span.button.switch {
+    width: 21px;
+    height: 24px;
+}
+.ztree li span.button.root_open {
+    background-position: -106px -180px;
+}
+.ztree li span.button.root_close {
+    background-position: -106px -144px;
+}
+.ztree li span.button.roots_open {
+    background-position: 2px -144px;
+}
+.ztree li span.button.roots_close {
+    background-position: -65px -144px;
+}
+.ztree li span.button.center_open {
+    background-position: 2px -180px;
+}
+.ztree li span.button.center_close {
+    background-position: -65px -180px;
+}
+.ztree li span.button.bottom_open {
+    background-position: 2px -216px;
+}
+.ztree li span.button.bottom_close {
+    background-position: -65px -216px;
+}
+/* .ztree li span.button.noline_open {
+  background-position: -105px -84px;
+}
+.ztree li span.button.noline_close {
+  background-position: -126px -84px;
+} */
+.ztree li span.button.root_docu {
+    background: none;
+}
+.ztree li span.button.roots_docu {
+    background-position: -31px -143px;
+}
+.ztree li span.button.center_docu {
+    background-position: -31px -182px;
+}
+.ztree li span.button.bottom_docu {
+    background-position: -31px -218px;
+}
+.ztree li span.button.noline_docu {
+    background: none;
+}
