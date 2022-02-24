@@ -1,8 +1,9 @@
 import React, { useMemo, useRef } from "react";
 import { ZTree, IZTreeRef } from "../ZTree";
-import { ZTreeConfigs } from "./tools";
+// import { ZTreeConfigs } from "./tools";
 import "./Tree.css";
 import { ITreeNode } from "./interface";
+import { ISetting } from "../ZTree/interface";
 
 export interface ITreeProps {
   /**
@@ -22,6 +23,26 @@ export interface ITreeProps {
    */
   updateExpandNode: (id: string, open: boolean) => void;
 }
+
+export const ZTreeConfigs: ISetting = {
+  check: {
+    enable: true,
+    chkStyle: "checkbox", // "checkbox" | "radio"
+    chkboxType: { Y: "", N: "" },
+  },
+  view: {
+    dblClickExpand: false,
+    showIcon: false,
+    showLine: false,
+    showTitle: false,
+    nameIsHTML: true,
+  },
+  data: {
+    simpleData: {
+      enable: true,
+    },
+  },
+};
 
 export const Tree: React.FC<ITreeProps> = (props) => {
   const {
