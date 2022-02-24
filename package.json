@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A react component library project",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@programmermark/component-library"
+    "registry": "https://npm.pkg.github.com/@programmermark"
   },
   "scripts": {
     "rollup": "rollup -c"
