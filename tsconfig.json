@@ -105,5 +105,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
+    "typeRoots": [
+      "node_modules/@types",
+    ]
   }
 }
