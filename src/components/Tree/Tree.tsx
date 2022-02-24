@@ -1,5 +1,5 @@
 import React, { useMemo, useRef } from "react";
-import { ZTree, IZTreeRef } from "./components/ZTree";
+import { ZTree, IZTreeRef } from "../ZTree";
 import { ZTreeConfigs } from "./tools";
 import "./Tree.css";
 import { ITreeNode } from "./interface";

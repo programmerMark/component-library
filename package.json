@@ -3,7 +3,8 @@
   "version": "1.0.3",
   "description": "A react component library project",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@programmermark"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "rollup": "rollup -c",
