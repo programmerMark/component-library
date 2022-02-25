@@ -1,2 +1,2 @@
-export * from './ZTree';
-export * from './interface';
+export { ZTree, IZTreeRef } from "./ZTree";
+export * from "./interface";
