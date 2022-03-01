@@ -11,7 +11,7 @@ import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import alias from "@rollup/plugin-alias";
-import image from "@rollup/plugin-image";
+import image from "rollup-plugin-img";
 import path from "path";
 
 const packageJson = require("./package.json");
@@ -59,7 +59,11 @@ export default [
         ],
       }),
       terser(),
-      image(),
+      image({
+        extensions: /\.(png|jpg|jpeg|gif|svg)$/, // support png|jpg|jpeg|gif|svg, and it's alse the default value
+        limit: 8192, // default 8192(8k)
+        exclude: "node_modules/**",
+      }),
     ],
   },
   {
