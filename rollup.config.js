@@ -2,6 +2,11 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
+// 新增 postcss plugins
+import simplevars from "postcss-simple-vars";
+import nested from "postcss-nested";
+import cssnext from "postcss-cssnext";
+import cssnano from "cssnano";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
@@ -41,7 +46,17 @@ export default [
         customResolver,
       }),
       typescript({ tsconfig: "./tsconfig.json" }),
-      postcss({ modules: true }),
+      postcss({
+        extract: true,
+        modules: true,
+        extensions: [".scss", ".css"],
+        plugins: [
+          simplevars(),
+          nested(),
+          cssnext({ warnForDuplicates: false }),
+          cssnano(),
+        ],
+      }),
       terser(),
     ],
   },
